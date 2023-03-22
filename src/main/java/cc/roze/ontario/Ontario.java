@@ -43,7 +43,7 @@ public class Ontario implements ModInitializer {
 	public static final Block DIORITE_BRICKS = new Block(FabricBlockSettings.copy(DIORITE_TILE));
 	public static final Block ANDESITE_BRICKS = new Block(FabricBlockSettings.copy(DIORITE_TILE));
 	public static final Block GRANITE_BRICKS = new Block(FabricBlockSettings.copy(DIORITE_TILE));
-	public static final Block IRON_LADDER = new IronLadder(AbstractBlock.Settings.of(Material.DECORATION).strength(1.0F).sounds(BlockSoundGroup.METAL).nonOpaque());
+	public static final Block IRON_LADDER = new LadderBlock(FabricBlockSettings.copy(Blocks.LADDER).strength(1.0F).sounds(BlockSoundGroup.METAL).nonOpaque());
 	public static final Block DIORITE_TILED_STAIRS = new ModBlockStairs(Ontario.DIORITE_TILE.getDefaultState(), FabricBlockSettings.copy(DIORITE_TILE));
 	public static final Block DIORITE_TILED_SLAB = new SlabBlock(FabricBlockSettings.copy(DIORITE_TILE));
 	public static final Block GRANITE_TILED_STAIRS = new ModBlockStairs(Ontario.GRANITE_TILE.getDefaultState(), FabricBlockSettings.copy(DIORITE_TILE));

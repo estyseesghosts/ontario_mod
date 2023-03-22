@@ -1,9 +1,10 @@
 package cc.roze.ontario;
-import net.minecraft.block.LadderBlock;
 
-public class IronLadder extends LadderBlock {
+import net.minecraft.block.Block;
+import net.minecraft.tag.TagKey;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
-    public IronLadder(Settings settings) {
-        super(settings);
-    }
+public class IronLadder {
+    public static final TagKey<Block> CLIMBABLE = TagKey.of(Registry.BLOCK_KEY, new Identifier("ontario", "climbable"));
 }
