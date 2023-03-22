@@ -4,13 +4,13 @@
     "#": {
       "item": "minecraft:dark_oak_planks"
     },
-    "X": {
+    "S": {
       "item": "minecraft:book"
     }
   },
   "pattern": [
     "###",
-    "XXX",
+    "SSS",
     "###"
   ],
   "result": {
