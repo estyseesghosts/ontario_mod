@@ -5,7 +5,7 @@
       "y": 90
     },
     "facing=north": {
-      "model": "ontario:block/iron_ladder",
+      "model": "ontario:block/iron_ladder"
     },
     "facing=south": {
       "model": "ontario:block/iron_ladder",
