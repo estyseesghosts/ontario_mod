@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "ontario:block/granite_tile",
+    "side": "ontario:block/granite_tile",
+    "top": "ontario:block/granite_tile"
+  }
+}

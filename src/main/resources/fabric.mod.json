@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "ontario",
+  "version": "${version}",
+
+  "name": "esty's building pack",
+  "description": "just some more blocks and stuff",
+  "authors": [
+    "esty"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/ontario/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "cc.roze.ontario.Ontario"
+    ]
+  },
+  "mixins": [
+    "ontario.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
