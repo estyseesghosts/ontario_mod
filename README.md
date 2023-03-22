@@ -1,9 +1,4 @@
-# Fabric Example Mod
+# Ontario
 
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+just a simple minecraft building mod, adds some vanilla-ish blocks for some flair, still a WIP 
+currently for 1.19.2 but will work on porting it forward sometime 
