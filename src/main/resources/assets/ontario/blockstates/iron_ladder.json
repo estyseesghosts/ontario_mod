@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=east": {
-      "model": "minecraft:block/ladder",
+      "model": "ontario:block/iron_ladder",
       "y": 90
     },
     "facing=north": {
-      "model": "minecraft:block/ladder"
+      "model": "ontario:block/iron_ladder",
     },
     "facing=south": {
-      "model": "minecraft:block/ladder",
+      "model": "ontario:block/iron_ladder",
       "y": 180
     },
     "facing=west": {
-      "model": "minecraft:block/ladder",
+      "model": "ontario:block/iron_ladder",
       "y": 270
     }
   }
