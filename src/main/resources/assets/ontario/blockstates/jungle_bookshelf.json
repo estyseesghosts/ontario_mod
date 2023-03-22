@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": [ {"model": "ontario:block/jungle_bookshelf"},{"model": "ontario:block/jungle_bookshelf_2"} ]
+    "": [ {"model": "ontario:block/jungle_bookshelf"},{"model": "ontario:block/jungle_bookshelf_2"},{"model": "ontario:block/jungle_bookshelf_3"}]
   }
 }

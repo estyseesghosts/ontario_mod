@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": [ {"model": "ontario:block/warped_bookshelf"},{"model": "ontario:block/warped_bookshelf_2"} ]
+    "": [ {"model": "ontario:block/warped_bookshelf"},{"model": "ontario:block/warped_bookshelf_2"},{"model": "ontario:block/warped_bookshelf_3"}]
   }
 }
