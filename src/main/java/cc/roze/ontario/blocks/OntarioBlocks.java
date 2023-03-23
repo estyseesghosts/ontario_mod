@@ -47,5 +47,4 @@ public class OntarioBlocks {
     public static final Block ANDESITE_BRICK_STAIRS = new ModBlockStairs(ANDESITE_BRICKS.getDefaultState(), FabricBlockSettings.copy(DIORITE_TILE));
     public static final Block ANDESITE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(DIORITE_TILE));
 
-
 }

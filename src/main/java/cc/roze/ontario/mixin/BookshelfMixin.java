@@ -33,7 +33,6 @@ abstract class BookshelfMixin {
         else if (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(BAMBOO_BOOKSHELF)) isBookshelf = true;
         else if (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(CHERRY_BOOKSHELF)) isBookshelf = true;
 
-
         cir.setReturnValue(isBookshelf && world.isAir(tablePos.add(bookshelfOffset.getX() / 2, bookshelfOffset.getY(), bookshelfOffset.getZ() / 2)));
     }
 }

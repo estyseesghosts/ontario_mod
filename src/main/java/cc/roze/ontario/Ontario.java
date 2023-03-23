@@ -18,17 +18,12 @@ import static cc.roze.ontario.blocks.OntarioBlocks.*;
 import static cc.roze.ontario.blocks.OntarioBlocks.ANDESITE_BRICK_SLAB;
 
 public class Ontario implements ModInitializer {
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
+
 	public static String MOD_ID = "ontario";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
 		BlockRenderLayerMap.INSTANCE.putBlock(WORKBENCH, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(IRON_LADDER, RenderLayer.getCutout());
 
