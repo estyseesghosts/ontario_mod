@@ -3,7 +3,6 @@ package cc.roze.ontario.blocks;
 import cc.roze.ontario.ModBlockStairs;
 import cc.roze.ontario.ModWorkbench;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.block.*;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
