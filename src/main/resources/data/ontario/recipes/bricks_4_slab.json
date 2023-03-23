@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:brick_slab"
+  },
+  "result": "ontario:bricks_4_slab",
+  "count": 1
+}
