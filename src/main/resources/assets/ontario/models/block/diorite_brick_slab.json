@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "ontario:block/diorite_bricks",
+    "side": "ontario:block/diorite_bricks",
+    "top": "ontario:block/diorite_bricks"
+  }
+}

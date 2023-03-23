@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ontario:block/diorite_brick_slab"
+    },
+    "type=double": {
+      "model": "ontario:block/diorite_bricks"
+    },
+    "type=top": {
+      "model": "ontario:block/diorite_brick_slab_top"
+    }
+  }
+}

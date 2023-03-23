@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ontario:block/andesite_brick_slab"
+    },
+    "type=double": {
+      "model": "ontario:block/andesite_bricks"
+    },
+    "type=top": {
+      "model": "ontario:block/andesite_brick_slab_top"
+    }
+  }
+}

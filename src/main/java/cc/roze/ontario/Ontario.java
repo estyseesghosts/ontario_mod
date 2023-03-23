@@ -104,6 +104,23 @@ public class Ontario implements ModInitializer {
 
 		Registry.register(Registry.BLOCK, new Identifier("ontario", "andesite_tiled_slab"), ANDESITE_TILED_SLAB);
 		Registry.register(Registry.ITEM, new Identifier("ontario", "andesite_tiled_slab"), new BlockItem(ANDESITE_TILED_SLAB, new FabricItemSettings().group(OTHER_GROUP)));
+		Registry.register(Registry.BLOCK, new Identifier("ontario", "diorite_brick_stairs"), DIORITE_BRICK_STAIRS);
+		Registry.register(Registry.ITEM, new Identifier("ontario", "diorite_brick_stairs"), new BlockItem(DIORITE_BRICK_STAIRS, new FabricItemSettings().group(OTHER_GROUP)));
+
+		Registry.register(Registry.BLOCK, new Identifier("ontario", "diorite_brick_slab"), DIORITE_BRICK_SLAB);
+		Registry.register(Registry.ITEM, new Identifier("ontario", "diorite_brick_slab"), new BlockItem(DIORITE_BRICK_SLAB, new FabricItemSettings().group(OTHER_GROUP)));
+
+		Registry.register(Registry.BLOCK, new Identifier("ontario", "granite_brick_stairs"), GRANITE_BRICK_STAIRS);
+		Registry.register(Registry.ITEM, new Identifier("ontario", "granite_brick_stairs"), new BlockItem(GRANITE_BRICK_STAIRS, new FabricItemSettings().group(OTHER_GROUP)));
+
+		Registry.register(Registry.BLOCK, new Identifier("ontario", "granite_brick_slab"), GRANITE_BRICK_SLAB);
+		Registry.register(Registry.ITEM, new Identifier("ontario", "granite_brick_slab"), new BlockItem(GRANITE_BRICK_SLAB, new FabricItemSettings().group(OTHER_GROUP)));
+
+		Registry.register(Registry.BLOCK, new Identifier("ontario", "andesite_brick_stairs"), ANDESITE_BRICK_STAIRS);
+		Registry.register(Registry.ITEM, new Identifier("ontario", "andesite_brick_stairs"), new BlockItem(ANDESITE_BRICK_STAIRS, new FabricItemSettings().group(OTHER_GROUP)));
+
+		Registry.register(Registry.BLOCK, new Identifier("ontario", "andesite_brick_slab"), ANDESITE_BRICK_SLAB);
+		Registry.register(Registry.ITEM, new Identifier("ontario", "andesite_brick_slab"), new BlockItem(ANDESITE_BRICK_SLAB, new FabricItemSettings().group(OTHER_GROUP)));
 
 		Registry.register(Registry.BLOCK, new Identifier("ontario", "workbench"), WORKBENCH);
 		Registry.register(Registry.ITEM, new Identifier("ontario", "workbench"), new BlockItem(WORKBENCH, new FabricItemSettings().group(OTHER_GROUP)));

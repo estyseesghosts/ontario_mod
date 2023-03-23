@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ontario:block/granite_brick_slab"
+    },
+    "type=double": {
+      "model": "ontario:block/granite_bricks"
+    },
+    "type=top": {
+      "model": "ontario:block/granite_brick_slab_top"
+    }
+  }
+}

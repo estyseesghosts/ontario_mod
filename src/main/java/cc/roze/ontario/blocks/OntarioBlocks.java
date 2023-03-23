@@ -39,5 +39,10 @@ public class OntarioBlocks {
     public static final Block WORKBENCH = new ModWorkbench(FabricBlockSettings.of(Material.WOOD).strength(2.0f).nonOpaque());
 
 
-
+    public static final Block GRANITE_BRICK_STAIRS = new ModBlockStairs(GRANITE_BRICKS.getDefaultState(), FabricBlockSettings.copy(DIORITE_TILE));
+    public static final Block GRANITE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(DIORITE_TILE));
+    public static final Block DIORITE_BRICK_STAIRS = new ModBlockStairs(DIORITE_BRICKS.getDefaultState(), FabricBlockSettings.copy(DIORITE_TILE));
+    public static final Block DIORITE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(DIORITE_TILE));
+    public static final Block ANDESITE_BRICK_STAIRS = new ModBlockStairs(ANDESITE_BRICKS.getDefaultState(), FabricBlockSettings.copy(DIORITE_TILE));
+    public static final Block ANDESITE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(DIORITE_TILE));
 }
