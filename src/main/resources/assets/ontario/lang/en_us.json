@@ -23,6 +23,14 @@
   "block.ontario.granite_bricks": "Granite Bricks",
   "block.ontario.diorite_bricks": "Diorite Bricks",
 
+  "block.ontario.andesite_brick_slab": "Andesite Brick Slab",
+  "block.ontario.granite_brick_slab": "Granite Brick Slab",
+  "block.ontario.diorite_brick_slab": "Diorite Brick Slab",
+  
+  "block.ontario.andesite_brick_stairs": "Andesite Brick Stairs",
+  "block.ontario.granite_brick_stairs": "Granite Brick Stairs",
+  "block.ontario.diorite_brick_stairs": "Diorite Brick Stairs",
+
   "block.minecraft.bookshelf": "Oak Bookshelf",
   "block.minecraft.ladder": "Wooden Ladder",
   "block.ontario.iron_ladder": "Iron Ladder",

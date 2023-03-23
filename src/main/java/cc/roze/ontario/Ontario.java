@@ -15,6 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import static cc.roze.ontario.blocks.OntarioBlocks.*;
+import static cc.roze.ontario.blocks.OntarioBlocks.ANDESITE_BRICK_SLAB;
 
 public class Ontario implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -117,6 +118,25 @@ public class Ontario implements ModInitializer {
 		Registry.register(Registries.BLOCK, new Identifier("ontario", "workbench"), WORKBENCH);
 		Registry.register(Registries.ITEM, new Identifier("ontario", "workbench"), new BlockItem(WORKBENCH, new FabricItemSettings()));
 
+		Registry.register(Registries.BLOCK, new Identifier("ontario", "diorite_brick_stairs"), DIORITE_BRICK_STAIRS);
+		Registry.register(Registries.ITEM, new Identifier("ontario", "diorite_brick_stairs"), new BlockItem(DIORITE_BRICK_STAIRS, new FabricItemSettings()));
+
+		Registry.register(Registries.BLOCK, new Identifier("ontario", "diorite_brick_slab"), DIORITE_BRICK_SLAB);
+		Registry.register(Registries.ITEM, new Identifier("ontario", "diorite_brick_slab"), new BlockItem(DIORITE_BRICK_SLAB, new FabricItemSettings()));
+
+		Registry.register(Registries.BLOCK, new Identifier("ontario", "granite_brick_stairs"), GRANITE_BRICK_STAIRS);
+		Registry.register(Registries.ITEM, new Identifier("ontario", "granite_brick_stairs"), new BlockItem(GRANITE_BRICK_STAIRS, new FabricItemSettings()));
+
+		Registry.register(Registries.BLOCK, new Identifier("ontario", "granite_brick_slab"), GRANITE_BRICK_SLAB);
+		Registry.register(Registries.ITEM, new Identifier("ontario", "granite_brick_slab"), new BlockItem(GRANITE_BRICK_SLAB, new FabricItemSettings()));
+
+		Registry.register(Registries.BLOCK, new Identifier("ontario", "andesite_brick_stairs"), ANDESITE_BRICK_STAIRS);
+		Registry.register(Registries.ITEM, new Identifier("ontario", "andesite_brick_stairs"), new BlockItem(ANDESITE_BRICK_STAIRS, new FabricItemSettings()));
+
+		Registry.register(Registries.BLOCK, new Identifier("ontario", "andesite_brick_slab"), ANDESITE_BRICK_SLAB);
+		Registry.register(Registries.ITEM, new Identifier("ontario", "andesite_brick_slab"), new BlockItem(ANDESITE_BRICK_SLAB, new FabricItemSettings()));
+
+
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register((content) -> {
 			content.addAfter(Blocks.BOOKSHELF, SPRUCE_BOOKSHELF, BIRCH_BOOKSHELF, JUNGLE_BOOKSHELF, ACACIA_BOOKSHELF, DARK_OAK_BOOKSHELF, MANGROVE_BOOKSHELF, CHERRY_BOOKSHELF, BAMBOO_BOOKSHELF, CRIMSON_BOOKSHELF, WARPED_BOOKSHELF);
 			content.addAfter(Blocks.CRAFTING_TABLE, WORKBENCH);
@@ -128,6 +148,8 @@ public class Ontario implements ModInitializer {
 			content.addAfter(Blocks.POLISHED_DIORITE_SLAB, DIORITE_TILE, DIORITE_TILED_STAIRS, DIORITE_TILED_SLAB);
 			content.addAfter(Blocks.POLISHED_GRANITE_SLAB, GRANITE_TILE, GRANITE_TILED_STAIRS, GRANITE_TILED_SLAB);
 			content.addAfter(Blocks.STONE_BRICKS, GRANITE_BRICKS, DIORITE_BRICKS, ANDESITE_BRICKS);
+			content.addAfter(Blocks.STONE_BRICK_STAIRS, GRANITE_BRICK_STAIRS, DIORITE_BRICK_STAIRS, ANDESITE_BRICK_STAIRS);
+			content.addAfter(Blocks.STONE_BRICK_SLAB, GRANITE_BRICK_SLAB, DIORITE_BRICK_SLAB, ANDESITE_BRICK_SLAB);
 
 			content.addAfter(Blocks.CHISELED_QUARTZ_BLOCK, QUARTZ_TILE);
 			content.addAfter(Blocks.CALCITE, CALCITE_BRICKS, CALCITE_COAL_TILE);
