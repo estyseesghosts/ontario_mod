@@ -4,16 +4,11 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
-import net.minecraft.registry.tag.TagKey;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.entry.RegistryEntry;
-import net.minecraft.sound.BlockSoundGroup;
-import cc.roze.ontario.blocks.OntarioBlocks;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,6 +26,13 @@ public class Ontario implements ModInitializer {
 					new Identifier("ontario", "blocks"))
 			.icon(() -> new ItemStack(Blocks.STONE))
 			.build();
+
+//	@Override
+//	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
+//		// ...
+//		fabricDataGenerator.addProvider(ModTagGen::new);
+//		// ...
+//	}
 
 	@Override
 	public void onInitialize() {
