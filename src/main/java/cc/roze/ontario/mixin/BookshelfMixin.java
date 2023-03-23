@@ -1,6 +1,5 @@
 package cc.roze.ontario.mixin;
 
-import cc.roze.ontario.Ontario;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.EnchantingTableBlock;
 import net.minecraft.util.math.BlockPos;
@@ -22,15 +21,17 @@ abstract class BookshelfMixin {
     {
         boolean isBookshelf = false;
 
-        if (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(Blocks.BOOKSHELF)) isBookshelf = true;
-        else if (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(ACACIA_BOOKSHELF)) isBookshelf = true;
-        else if (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(BIRCH_BOOKSHELF)) isBookshelf = true;
-        else if (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(SPRUCE_BOOKSHELF)) isBookshelf = true;
-        else if (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(JUNGLE_BOOKSHELF)) isBookshelf = true;
+        if        (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(Blocks.BOOKSHELF)) isBookshelf = true;
+        else if   (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(ACACIA_BOOKSHELF)) isBookshelf = true;
+        else if    (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(BIRCH_BOOKSHELF)) isBookshelf = true;
+        else if   (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(SPRUCE_BOOKSHELF)) isBookshelf = true;
+        else if   (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(JUNGLE_BOOKSHELF)) isBookshelf = true;
         else if (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(DARK_OAK_BOOKSHELF)) isBookshelf = true;
-        else if (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(CRIMSON_BOOKSHELF)) isBookshelf = true;
-        else if (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(WARPED_BOOKSHELF)) isBookshelf = true;
+        else if  (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(CRIMSON_BOOKSHELF)) isBookshelf = true;
+        else if   (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(WARPED_BOOKSHELF)) isBookshelf = true;
         else if (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(MANGROVE_BOOKSHELF)) isBookshelf = true;
+        else if (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(BAMBOO_BOOKSHELF)) isBookshelf = true;
+        else if (world.getBlockState(tablePos.add(bookshelfOffset)).isOf(CHERRY_BOOKSHELF)) isBookshelf = true;
 
         cir.setReturnValue(isBookshelf && world.isAir(tablePos.add(bookshelfOffset.getX() / 2, bookshelfOffset.getY(), bookshelfOffset.getZ() / 2)));
     }

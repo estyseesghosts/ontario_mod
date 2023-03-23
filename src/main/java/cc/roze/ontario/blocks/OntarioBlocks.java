@@ -3,7 +3,6 @@ package cc.roze.ontario.blocks;
 import cc.roze.ontario.ModBlockStairs;
 import cc.roze.ontario.ModWorkbench;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.block.*;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -26,6 +25,9 @@ public class OntarioBlocks {
     public static final Block MANGROVE_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
     public static final Block CRIMSON_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
     public static final Block WARPED_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
+    public static final Block CHERRY_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
+    public static final Block BAMBOO_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
+
     public static final Block DIORITE_BRICKS = new Block(FabricBlockSettings.copy(DIORITE_TILE));
     public static final Block ANDESITE_BRICKS = new Block(FabricBlockSettings.copy(DIORITE_TILE));
     public static final Block GRANITE_BRICKS = new Block(FabricBlockSettings.copy(DIORITE_TILE));
@@ -37,7 +39,5 @@ public class OntarioBlocks {
     public static final Block ANDESITE_TILED_STAIRS = new ModBlockStairs(ANDESITE_TILE.getDefaultState(), FabricBlockSettings.copy(DIORITE_TILE));
     public static final Block ANDESITE_TILED_SLAB = new SlabBlock(FabricBlockSettings.copy(DIORITE_TILE));
     public static final Block WORKBENCH = new ModWorkbench(FabricBlockSettings.of(Material.WOOD).strength(2.0f).nonOpaque());
-
-
 
 }

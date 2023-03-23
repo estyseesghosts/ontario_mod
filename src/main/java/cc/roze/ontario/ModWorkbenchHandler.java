@@ -7,6 +7,8 @@ import net.minecraft.screen.ScreenHandlerContext;
 import static cc.roze.ontario.blocks.OntarioBlocks.*;
 
 
+import static cc.roze.ontario.blocks.OntarioBlocks.WORKBENCH;
+
 public class ModWorkbenchHandler extends CraftingScreenHandler {
     private final ScreenHandlerContext context;
 

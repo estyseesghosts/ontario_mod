@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": [ {"model": "ontario:block/cherry_bookshelf"},{"model": "ontario:block/cherry_bookshelf_2"},{"model": "ontario:block/cherry_bookshelf_3"}]
+  }
+}
