@@ -23,11 +23,6 @@ public class Ontario implements ModInitializer {
 	public static String MOD_ID = "ontario";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-//	public static final ItemGroup OTHER_GROUP = FabricItemGroupBuilder.create(
-//					new Identifier("ontario", "blocks"))
-//			.icon(() -> new ItemStack(Blocks.STONE))
-//			.build();
-
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -129,23 +124,15 @@ public class Ontario implements ModInitializer {
 		});
 
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((content) -> {
-			content.add(ANDESITE_TILE);
-			content.add(ANDESITE_TILED_SLAB);
-			content.add(ANDESITE_TILED_STAIRS);
-			content.add(ANDESITE_BRICKS);
-
-			content.add(GRANITE_TILE);
-			content.add(GRANITE_TILED_SLAB);
-			content.add(GRANITE_TILED_STAIRS);
-			content.add(GRANITE_BRICKS);
-
-			content.add(DIORITE_TILE);
-			content.add(DIORITE_TILED_SLAB);
-			content.add(DIORITE_TILED_STAIRS);
-			content.add(DIORITE_BRICKS);
+			content.addAfter(Blocks.POLISHED_ANDESITE_SLAB, ANDESITE_TILE, ANDESITE_TILED_STAIRS, ANDESITE_TILED_SLAB);
+			content.addAfter(Blocks.POLISHED_DIORITE_SLAB, DIORITE_TILE, DIORITE_TILED_STAIRS, DIORITE_TILED_SLAB);
+			content.addAfter(Blocks.POLISHED_GRANITE_SLAB, GRANITE_TILE, GRANITE_TILED_STAIRS, GRANITE_TILED_SLAB);
+			content.addAfter(Blocks.STONE_BRICKS, GRANITE_BRICKS, DIORITE_BRICKS, ANDESITE_BRICKS);
 
 			content.addAfter(Blocks.CHISELED_QUARTZ_BLOCK, QUARTZ_TILE);
 			content.addAfter(Blocks.CALCITE, CALCITE_BRICKS, CALCITE_COAL_TILE);
+
+			content.add(FAKE_BEDROCK);
 		});
 	}
 }
