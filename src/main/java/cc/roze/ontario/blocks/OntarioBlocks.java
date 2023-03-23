@@ -26,6 +26,9 @@ public class OntarioBlocks {
     public static final Block MANGROVE_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
     public static final Block CRIMSON_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
     public static final Block WARPED_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
+    public static final Block CHERRY_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
+    public static final Block BAMBOO_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
+
     public static final Block DIORITE_BRICKS = new Block(FabricBlockSettings.copy(DIORITE_TILE));
     public static final Block ANDESITE_BRICKS = new Block(FabricBlockSettings.copy(DIORITE_TILE));
     public static final Block GRANITE_BRICKS = new Block(FabricBlockSettings.copy(DIORITE_TILE));

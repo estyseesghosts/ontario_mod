@@ -98,6 +98,12 @@ public class Ontario implements ModInitializer {
 		Registry.register(Registries.BLOCK, new Identifier("ontario", "jungle_bookshelf"), JUNGLE_BOOKSHELF);
 		Registry.register(Registries.ITEM, new Identifier("ontario", "jungle_bookshelf"), new BlockItem(JUNGLE_BOOKSHELF, new FabricItemSettings().group(OTHER_GROUP)));
 
+		Registry.register(Registries.BLOCK, new Identifier("ontario", "cherry_bookshelf"), CHERRY_BOOKSHELF);
+		Registry.register(Registries.ITEM, new Identifier("ontario", "cherry_bookshelf"), new BlockItem(CHERRY_BOOKSHELF, new FabricItemSettings().group(OTHER_GROUP)));
+
+		Registry.register(Registries.BLOCK, new Identifier("ontario", "bamboo_bookshelf"), BAMBOO_BOOKSHELF);
+		Registry.register(Registries.ITEM, new Identifier("ontario", "bamboo_bookshelf"), new BlockItem(BAMBOO_BOOKSHELF, new FabricItemSettings().group(OTHER_GROUP)));
+
 		Registry.register(Registries.BLOCK, new Identifier("ontario", "diorite_bricks"), DIORITE_BRICKS);
 		Registry.register(Registries.ITEM, new Identifier("ontario", "diorite_bricks"), new BlockItem(DIORITE_BRICKS, new FabricItemSettings().group(OTHER_GROUP)));
 

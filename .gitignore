@@ -4,3 +4,4 @@ run/
 .DS_Store
 remappedSrc/
 src_1.19.2/
+.idea/
