@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ontario:block/bricks_4_slab"
+    },
+    "type=double": {
+      "model": "ontario:block/bricks_4"
+    },
+    "type=top": {
+      "model": "ontario:block/bricks_4_slab_top"
+    }
+  }
+}

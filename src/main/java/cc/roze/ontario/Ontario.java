@@ -136,7 +136,33 @@ public class Ontario implements ModInitializer {
 		Registry.register(Registries.BLOCK, new Identifier("ontario", "andesite_brick_slab"), ANDESITE_BRICK_SLAB);
 		Registry.register(Registries.ITEM, new Identifier("ontario", "andesite_brick_slab"), new BlockItem(ANDESITE_BRICK_SLAB, new FabricItemSettings()));
 
+		Registry.register(Registries.BLOCK, new Identifier("ontario", "bricks_2"), BRICKS_2);
+		Registry.register(Registries.ITEM, new Identifier("ontario", "bricks_2"), new BlockItem(BRICKS_2, new FabricItemSettings()));
 
+		Registry.register(Registries.BLOCK, new Identifier("ontario", "bricks_3"), BRICKS_3);
+		Registry.register(Registries.ITEM, new Identifier("ontario", "bricks_3"), new BlockItem(BRICKS_3, new FabricItemSettings()));
+		
+		Registry.register(Registries.BLOCK, new Identifier("ontario", "bricks_4"), BRICKS_4);
+		Registry.register(Registries.ITEM, new Identifier("ontario", "bricks_4"), new BlockItem(BRICKS_4, new FabricItemSettings()));
+
+		Registry.register(Registries.BLOCK, new Identifier("ontario", "bricks_2_stairs"), BRICKS_2_STAIRS);
+		Registry.register(Registries.ITEM, new Identifier("ontario", "bricks_2_stairs"), new BlockItem(BRICKS_2_STAIRS, new FabricItemSettings()));
+
+		Registry.register(Registries.BLOCK, new Identifier("ontario", "bricks_2_slab"), BRICKS_2_SLAB);
+		Registry.register(Registries.ITEM, new Identifier("ontario", "bricks_2_slab"), new BlockItem(BRICKS_2_SLAB, new FabricItemSettings()));
+
+		Registry.register(Registries.BLOCK, new Identifier("ontario", "bricks_3_stairs"), BRICKS_3_STAIRS);
+		Registry.register(Registries.ITEM, new Identifier("ontario", "bricks_3_stairs"), new BlockItem(BRICKS_3_STAIRS, new FabricItemSettings()));
+
+		Registry.register(Registries.BLOCK, new Identifier("ontario", "bricks_3_slab"), BRICKS_3_SLAB);
+		Registry.register(Registries.ITEM, new Identifier("ontario", "bricks_3_slab"), new BlockItem(BRICKS_3_SLAB, new FabricItemSettings()));
+
+		Registry.register(Registries.BLOCK, new Identifier("ontario", "bricks_4_stairs"), BRICKS_4_STAIRS);
+		Registry.register(Registries.ITEM, new Identifier("ontario", "bricks_4_stairs"), new BlockItem(BRICKS_4_STAIRS, new FabricItemSettings()));
+
+		Registry.register(Registries.BLOCK, new Identifier("ontario", "bricks_4_slab"), BRICKS_4_SLAB);
+		Registry.register(Registries.ITEM, new Identifier("ontario", "bricks_4_slab"), new BlockItem(BRICKS_4_SLAB, new FabricItemSettings()));
+		
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register((content) -> {
 			content.addAfter(Blocks.BOOKSHELF, SPRUCE_BOOKSHELF, BIRCH_BOOKSHELF, JUNGLE_BOOKSHELF, ACACIA_BOOKSHELF, DARK_OAK_BOOKSHELF, MANGROVE_BOOKSHELF, CHERRY_BOOKSHELF, BAMBOO_BOOKSHELF, CRIMSON_BOOKSHELF, WARPED_BOOKSHELF);
 			content.addAfter(Blocks.CRAFTING_TABLE, WORKBENCH);
@@ -144,15 +170,16 @@ public class Ontario implements ModInitializer {
 		});
 
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register((content) -> {
-			content.addAfter(Blocks.POLISHED_ANDESITE_SLAB, ANDESITE_TILE, ANDESITE_TILED_STAIRS, ANDESITE_TILED_SLAB);
-			content.addAfter(Blocks.POLISHED_DIORITE_SLAB, DIORITE_TILE, DIORITE_TILED_STAIRS, DIORITE_TILED_SLAB);
-			content.addAfter(Blocks.POLISHED_GRANITE_SLAB, GRANITE_TILE, GRANITE_TILED_STAIRS, GRANITE_TILED_SLAB);
-			content.addAfter(Blocks.STONE_BRICKS, GRANITE_BRICKS, DIORITE_BRICKS, ANDESITE_BRICKS);
-			content.addAfter(Blocks.STONE_BRICK_STAIRS, GRANITE_BRICK_STAIRS, DIORITE_BRICK_STAIRS, ANDESITE_BRICK_STAIRS);
-			content.addAfter(Blocks.STONE_BRICK_SLAB, GRANITE_BRICK_SLAB, DIORITE_BRICK_SLAB, ANDESITE_BRICK_SLAB);
-
+			content.addAfter(Blocks.POLISHED_ANDESITE_SLAB, ANDESITE_TILE, ANDESITE_TILED_STAIRS, ANDESITE_TILED_SLAB, ANDESITE_BRICKS, ANDESITE_BRICK_STAIRS, ANDESITE_BRICK_SLAB);
+			content.addAfter(Blocks.POLISHED_DIORITE_SLAB, DIORITE_TILE, DIORITE_TILED_STAIRS, DIORITE_TILED_SLAB, DIORITE_BRICKS, DIORITE_BRICK_STAIRS, DIORITE_BRICK_SLAB);
+			content.addAfter(Blocks.POLISHED_GRANITE_SLAB, GRANITE_TILE, GRANITE_TILED_STAIRS, GRANITE_TILED_SLAB, GRANITE_BRICKS, GRANITE_BRICK_STAIRS, GRANITE_BRICK_SLAB);
+			
 			content.addAfter(Blocks.CHISELED_QUARTZ_BLOCK, QUARTZ_TILE);
 			content.addAfter(Blocks.CALCITE, CALCITE_BRICKS, CALCITE_COAL_TILE);
+
+			content.addAfter(Blocks.BRICKS, BRICKS_2, BRICKS_3, BRICKS_4);
+			content.addAfter(Blocks.BRICK_STAIRS, BRICKS_2_STAIRS, BRICKS_3_STAIRS, BRICKS_4_STAIRS);
+			content.addAfter(Blocks.BRICK_SLAB, BRICKS_2_SLAB, BRICKS_3_SLAB, BRICKS_4_SLAB);
 
 			content.add(FAKE_BEDROCK);
 		});

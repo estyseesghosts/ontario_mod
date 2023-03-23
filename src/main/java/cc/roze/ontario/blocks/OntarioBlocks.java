@@ -46,6 +46,15 @@ public class OntarioBlocks {
     public static final Block DIORITE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(DIORITE_TILE));
     public static final Block ANDESITE_BRICK_STAIRS = new ModBlockStairs(ANDESITE_BRICKS.getDefaultState(), FabricBlockSettings.copy(DIORITE_TILE));
     public static final Block ANDESITE_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(DIORITE_TILE));
+    public static final Block BRICKS_2 = new SlabBlock(FabricBlockSettings.copy(Blocks.BRICKS));
+    public static final Block BRICKS_3 = new SlabBlock(FabricBlockSettings.copy(Blocks.BRICKS));
+    public static final Block BRICKS_4 = new SlabBlock(FabricBlockSettings.copy(Blocks.BRICKS));
+    public static final Block BRICKS_2_STAIRS = new ModBlockStairs(BRICKS_2.getDefaultState(), FabricBlockSettings.copy(BRICKS_4));
+    public static final Block BRICKS_3_STAIRS = new ModBlockStairs(BRICKS_2.getDefaultState(), FabricBlockSettings.copy(BRICKS_4));
+    public static final Block BRICKS_4_STAIRS = new ModBlockStairs(BRICKS_2.getDefaultState(), FabricBlockSettings.copy(BRICKS_4));
+    public static final Block BRICKS_2_SLAB = new SlabBlock(FabricBlockSettings.copy(BRICKS_2));
+    public static final Block BRICKS_3_SLAB = new SlabBlock(FabricBlockSettings.copy(BRICKS_2));
+    public static final Block BRICKS_4_SLAB = new SlabBlock(FabricBlockSettings.copy(BRICKS_2));
 
 
 }

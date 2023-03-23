@@ -41,5 +41,13 @@
 
   "block.ontario.diorite_tiled_slab": "Diorite Tile Slab",
   "block.ontario.granite_tiled_slab": "Granite Tile Slab",
-  "block.ontario.andesite_tiled_slab": "Andesite Tile Slab"
+  "block.ontario.andesite_tiled_slab": "Andesite Tile Slab",
+  
+  "block.ontario.bricks_2_stairs": "Brick Stairs",
+  "block.ontario.bricks_3_stairs": "Brick Stairs",
+  "block.ontario.bricks_4_stairs": "Brick Stairs",
+
+  "block.ontario.bricks_2_slab": "Brick Slab",
+  "block.ontario.bricks_3_slab": "Brick Slab",
+  "block.ontario.bricks_4_slab": "Brick Slab"
 }
