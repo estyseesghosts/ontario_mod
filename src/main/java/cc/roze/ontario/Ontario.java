@@ -14,50 +14,18 @@ import net.minecraft.util.registry.Registry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Ontario implements ModInitializer {
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
+import static cc.roze.ontario.blocks.OntarioBlocks.*;
 
+public class Ontario implements ModInitializer {
+	public static String MOD_ID = "ontario";
+	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static final ItemGroup OTHER_GROUP = FabricItemGroupBuilder.create(
 					new Identifier("ontario", "blocks"))
 			.icon(() -> new ItemStack(Blocks.STONE))
 			.build();
 
-	public static final Logger LOGGER = LoggerFactory.getLogger("ontario");
-	public static final Block DIORITE_TILE = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5f));
-	public static final Block GRANITE_TILE = new Block(FabricBlockSettings.copy(DIORITE_TILE));
-	public static final Block ANDESITE_TILE = new Block(FabricBlockSettings.copy(DIORITE_TILE));
-	public static final Block QUARTZ_TILE = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5f));
-	public static final Block CALCITE_COAL_TILE = new Block(FabricBlockSettings.of(Material.STONE).strength(1.5f));
-	public static final Block CALCITE_BRICKS = new Block(FabricBlockSettings.copy(DIORITE_TILE));
-	public static final Block FAKE_BEDROCK = new Block(FabricBlockSettings.copy(DIORITE_TILE));
-	public static final Block ACACIA_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
-	public static final Block BIRCH_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
-	public static final Block SPRUCE_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
-	public static final Block DARK_OAK_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
-	public static final Block JUNGLE_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
-	public static final Block MANGROVE_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
-	public static final Block CRIMSON_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
-	public static final Block WARPED_BOOKSHELF = new Block(FabricBlockSettings.of(Material.WOOD).strength(2.0f));
-	public static final Block DIORITE_BRICKS = new Block(FabricBlockSettings.copy(DIORITE_TILE));
-	public static final Block ANDESITE_BRICKS = new Block(FabricBlockSettings.copy(DIORITE_TILE));
-	public static final Block GRANITE_BRICKS = new Block(FabricBlockSettings.copy(DIORITE_TILE));
-	public static final Block IRON_LADDER = new LadderBlock(FabricBlockSettings.copy(Blocks.LADDER).strength(1.0F).sounds(BlockSoundGroup.METAL).nonOpaque());
-	public static final Block DIORITE_TILED_STAIRS = new ModBlockStairs(Ontario.DIORITE_TILE.getDefaultState(), FabricBlockSettings.copy(DIORITE_TILE));
-	public static final Block DIORITE_TILED_SLAB = new SlabBlock(FabricBlockSettings.copy(DIORITE_TILE));
-	public static final Block GRANITE_TILED_STAIRS = new ModBlockStairs(Ontario.GRANITE_TILE.getDefaultState(), FabricBlockSettings.copy(DIORITE_TILE));
-	public static final Block GRANITE_TILED_SLAB = new SlabBlock(FabricBlockSettings.copy(DIORITE_TILE));
-	public static final Block ANDESITE_TILED_STAIRS = new ModBlockStairs(Ontario.ANDESITE_TILE.getDefaultState(), FabricBlockSettings.copy(DIORITE_TILE));
-	public static final Block ANDESITE_TILED_SLAB = new SlabBlock(FabricBlockSettings.copy(DIORITE_TILE));
-
-	public static final Block WORKBENCH = new ModWorkbench(FabricBlockSettings.of(Material.WOOD).strength(2.0f).nonOpaque());
-
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
 		BlockRenderLayerMap.INSTANCE.putBlock(WORKBENCH, RenderLayer.getCutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(IRON_LADDER, RenderLayer.getCutout());
 
