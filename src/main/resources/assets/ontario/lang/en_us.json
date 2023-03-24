@@ -5,6 +5,7 @@
   "block.ontario.diorite_tile": "Diorite Tiles",
   "block.ontario.quartz_tile": "Quartz Tiles",
   "block.ontario.calcite_bricks": "Calcite Bricks",
+  "block.ontario.polished_calcite": "Polished Calcite",
   "block.ontario.calcite_coal_tile": "Calcite Checkered Tiles",
   "block.ontario.fake_bedrock": "Fake Bedrock",
 
@@ -43,9 +44,9 @@
   "block.ontario.granite_tiled_slab": "Granite Tile Slab",
   "block.ontario.andesite_tiled_slab": "Andesite Tile Slab",
 
-  "block.ontario.bricks_2": "Brick",
-  "block.ontario.bricks_3": "Brick",
-  "block.ontario.bricks_4": "Brick",
+  "block.ontario.bricks_2": "Bricks",
+  "block.ontario.bricks_3": "Bricks",
+  "block.ontario.bricks_4": "Bricks",
 
   "block.ontario.bricks_2_stairs": "Brick Stairs",
   "block.ontario.bricks_3_stairs": "Brick Stairs",
@@ -53,5 +54,9 @@
 
   "block.ontario.bricks_2_slab": "Brick Slab",
   "block.ontario.bricks_3_slab": "Brick Slab",
-  "block.ontario.bricks_4_slab": "Brick Slab"
+  "block.ontario.bricks_4_slab": "Brick Slab",
+
+  "block.ontario.stone_bricks_2": "Stone Bricks",
+  "block.ontario.stone_bricks_2_stairs": "Stone Brick Stairs",
+  "block.ontario.stone_bricks_2_slab": "Stone Brick Slab"
 }

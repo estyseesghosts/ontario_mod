@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "ontario:block/stone_bricks_2",
+    "side": "ontario:block/stone_bricks_2",
+    "top": "ontario:block/stone_bricks_2"
+  }
+}
